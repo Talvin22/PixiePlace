@@ -89,6 +89,7 @@ async def det_current_user(token: Annotated[str, Depends(oauth2_bearer)]):
 @auth_router.post("/", status_code=status.HTTP_201_CREATED)
 async def create_user(db: db_dependency, create_user_request: CreateUserRequest):
     try:
+        # user_model = db.query(Users).filter(Users.id == create_user_req.id).first()
         create_user_model = Users(
             username=create_user_request.username,
             email=create_user_request.email,
