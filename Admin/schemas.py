@@ -1,5 +1,3 @@
-from datetime import datetime
-
 from pydantic import BaseModel
 
 class Suppliers(BaseModel):
@@ -34,36 +32,3 @@ class Products(BaseModel):
     size: str
     supplier_id: int
     category_id: int
-
-class Comments(BaseModel):
-
-    text : str
-    photo : bytes
-    date : datetime
-    mark : float
-    product_id : int
-    user_id : int
-
-
-class Cart(BaseModel):
-
-    user_id : int
-    product_id : int
-
-
-class Messages(BaseModel):
-
-    data : dict
-    user_id : int
-
-
-class Answers(BaseModel):
-
-    data : dict
-    user_id : int
-
-
-class ProductPhotos(BaseModel):
-
-    photo : bytes
-    product_id : int

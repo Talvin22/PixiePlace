@@ -7,7 +7,7 @@ from sqlalchemy.exc import IntegrityError
 from sqlalchemy.orm import Session
 from starlette import status
 from fastapi.security import OAuth2PasswordRequestForm, OAuth2PasswordBearer
-from Auth.schemas import CreateUserRequest, Token
+from Auth.schemas import CreateUserRequest, Token, User
 from Models import models
 
 from Models.models import Users
@@ -116,3 +116,16 @@ async def login_for_access_token(form_data: Annotated[OAuth2PasswordRequestForm,
     token = create_access_token(user.username, user.id, timedelta(minutes=20))
     return {"access_token": token,
             "token_type": "bearer"}
+
+async def get_current_active_user(
+    current_user: Annotated[User, Depends(det_current_user)]
+):
+    if current_user.disabled:
+        raise HTTPException(status_code=400, detail="Inactive user")
+    return current_user
+
+@auth_router.get("/users/me/", response_model=User)
+async def read_users_me(
+    current_user: Annotated[User, Depends(get_current_active_user)]
+):
+    return current_user
