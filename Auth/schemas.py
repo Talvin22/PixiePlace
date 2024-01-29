@@ -1,69 +1,26 @@
-from datetime import datetime
-
 from pydantic import BaseModel
 
-class Suppliers(BaseModel):
 
-    company_name : str
+class CreateUserRequest(BaseModel):
+    username: str
+    email: str
+    phone_number: str
+    first_name: str
+    last_name: str
+    password: str
+    is_admin: bool
+
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str
+
+class User(BaseModel):
+
     email : str
     phone_number : str
-    address : str
-
-
-class Categories(BaseModel):
-
-    name :str
-
-
-class Subcategories(BaseModel):
-
-    name : str
-    category_id : int
-
-
-class Products(BaseModel):
-
-    title: str
-    description: str
-    photo: bytes
-    on_sale: bool
-    price: int
-    characteristic: str
-    mark: float
-    in_stock: bool
-    size: str
-    supplier_id: int
-    category_id: int
-
-class Comments(BaseModel):
-
-    text : str
-    photo : bytes
-    date : datetime
-    mark : float
-    product_id : int
-    user_id : int
-
-
-class Cart(BaseModel):
-
-    user_id : int
-    product_id : int
-
-
-class Messages(BaseModel):
-
-    data : dict
-    user_id : int
-
-
-class Answers(BaseModel):
-
-    data : dict
-    user_id : int
-
-
-class ProductPhotos(BaseModel):
-
-    photo : bytes
-    product_id : int
+    username : str
+    first_name : str
+    last_name : str
+    hashed_password : str
+    is_admin : bool
