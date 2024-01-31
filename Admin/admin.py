@@ -1,9 +1,11 @@
-from fastapi import APIRouter
+from typing import Annotated
+
+from fastapi import APIRouter, Depends, HTTPException
 from sqlalchemy import insert
 from starlette import status
 
 from Admin.schemas import Suppliers, Categories, Subcategories, Products
-from Auth.auth import db_dependency
+from Auth.auth import db_dependency, get_current_user
 from Models import models
 from database.database import engine
 
@@ -12,12 +14,17 @@ admin_router = APIRouter(
     tags=["Admin"]
 )
 models.Base.metadata.create_all(bind=engine)
+user_dependency = Annotated[dict, Depends(get_current_user)]
+
 
 @admin_router.post("/add_sup", status_code=status.HTTP_201_CREATED)
-def test_add_supplier(new_sup: Suppliers, db: db_dependency):
+def test_add_supplier(user: user_dependency, new_sup: Suppliers, db: db_dependency):
+    if user is None:
+        raise HTTPException(status_code=401, detail='Authentication Failed')
     stmt = insert(models.Suppliers).values(**new_sup.model_dump())
     db.execute(stmt)
     db.commit()
+    return {"status": 200}
 
 
 @admin_router.post("/add_cat", status_code=status.HTTP_201_CREATED)
