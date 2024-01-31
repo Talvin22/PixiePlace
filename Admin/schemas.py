@@ -1,26 +1,23 @@
 from pydantic import BaseModel
 
-class Suppliers(BaseModel):
 
-    company_name : str
-    email : str
-    phone_number : str
-    address : str
+class Suppliers(BaseModel):
+    company_name: str
+    email: str
+    phone_number: str
+    address: str
 
 
 class Categories(BaseModel):
-
-    name :str
+    name: str
 
 
 class Subcategories(BaseModel):
-
-    name : str
-    category_id : int
+    name: str
+    category_id: int
 
 
 class Products(BaseModel):
-
     title: str
     description: str
     photo: bytes
