@@ -1,35 +1,26 @@
-from fastapi_users import fastapi_users, FastAPIUsers
-from fastapi import FastAPI
+from typing import Annotated
 
-from Auth.auth import auth_backend
-from Auth.database import User
-from Auth.manager import get_user_manager
-from Auth.schemas import UserRead, UserCreate
-# from Root.root import root_router
-# from Single.single import single_router
-# from Admin.admin import admin_router
+from fastapi import FastAPI, Depends
+# Talvin, Alex
 
-fastapi_users = FastAPIUsers[User, int](
-    get_user_manager,
-    [auth_backend],
-)
+from Auth.auth import router, get_current_user
+from Root.root import root_router
+from Single.single import single_router
+from Admin.admin import admin_router
+
+from Models import models
+from database.database import engine
+
 
 app = FastAPI(
     title="PixiePlace"
 )
 
-app.include_router(
-    fastapi_users.get_auth_router(auth_backend),
-    prefix="/auth/jwt",
-    tags=["auth"],
-)
+models.Base.metadata.create_all(bind=engine)
+app.include_router(router)
+app.include_router(root_router)
+app.include_router(single_router)
+app.include_router(admin_router)
 
-app.include_router(
-    fastapi_users.get_register_router(UserRead, UserCreate),
-    prefix="/auth",
-    tags=["auth"],
-)
 
-# app.include_router(root_router)
-# app.include_router(single_router)
-# app.include_router(admin_router)
+
