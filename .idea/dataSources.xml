@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:R:\Projects\PixiePlace_v0.0\shop.db</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="PixiePlace@localhost" uuid="22763f2b-ce76-4a64-9a1b-d58d9fe4dc0c">
+      <driver-ref>postgresql</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://localhost:5432/PixiePlace</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
