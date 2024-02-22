@@ -1,5 +1,5 @@
 import React from "react";
-import "style.css"
+import "./style.css"
 
 export const Button = ({className}) =>{
     return(
@@ -16,7 +16,7 @@ export const Button = ({className}) =>{
 
     <div className="overlap-group2">
         <div className="rectangle2"/>
-        <div className="text=wrapper3">Кошик</div>
+        <div className="text-wrapper3">Кошик</div>
     </div>
 
     <img className="vector" alt="Vector"/>

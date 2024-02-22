@@ -1,4 +1,4 @@
-import "/src/DivWrapper/global.css"
+//import "/src/DivWrapper/global.css"
 import React from "react";
 import ReactDOMClient from "react-dom/client";
 import {DivWrapper} from "./DivWrapper";

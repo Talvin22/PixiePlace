@@ -1,0 +1,62 @@
+.sing_in_button {
+    background-color: #000;
+    border-radius: 10px;
+    height: 25px;
+    position: relative;
+    width: 100px;
+}
+
+.sing_in_button .text-wrapper{
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 25px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: -1px;
+    width: 100px;
+}
+
+.sing_in_button .overlap{
+    height: 26px;
+    left: -69px;
+    position: absolute;
+    top: -46px;
+    width: 100px;
+}
+
+.sing_in_button .rectangle{
+    background-color: #ffffff;
+    height: 25px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 100px;
+}
+
+.sing_in_button .div{
+    color: #363636;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 25px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100px;
+}
+
+.sing_in_button .overlap-group{
+    height: 26px;
+    left: 0;
+    position: absolute;
+    top: 36px;
+    width: 100px;
+}

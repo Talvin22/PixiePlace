@@ -1,10 +1,10 @@
-.primary-button{
+.button{
     height: 25px;
     position: relative;
     width: 100px;
 }
 
-.primary-button .overlap{
+.button .overlap{
     height: 25px;
     left: -762px;
     position: absolute;
@@ -12,7 +12,7 @@
     width: 102px;
 }
 
-.primary-button .rectangle{
+.button .rectangle{
     background-color: #0a0a0a;
     border-radius: 10px;
     height: 24px;
@@ -22,7 +22,7 @@
     width: 102px;
 }
 
-.primary-button .text-wrapper{
+.button .text-wrapper{
     color: #f7f7f7;
     font-family: "Inter", Helvetica;
     font-size: 12px;
@@ -37,7 +37,7 @@
     width: 102px;
 }
 
-.primary-button .overlap-group{
+.button .overlap-group{
     height: 25px;
     left: -648px;
     position: absolute;
@@ -45,7 +45,7 @@
     width: 103px;
 }
 
-.primary-button .div{
+.button .div{
     background-color: #000000;
     border-radius: 10px;
     height: 24px;
@@ -55,7 +55,7 @@
     width: 103px;
 }
 
-.primary-button .text-wrapper2{
+.button .text-wrapper2{
     color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 12px;
@@ -70,7 +70,7 @@
     width: 103px;
 }
 
-.primary-button .overlap-group2{
+.button .overlap-group2{
     height: 27px;
     left: 91px;
     position: absolute;
@@ -78,7 +78,7 @@
     width: 102px;
 }
 
-.primary-button .rectangle2{
+.button .rectangle2{
     background-color: #000000;
     border-radius: 10px;
     height: 24px;
@@ -88,7 +88,7 @@
     width: 102px;
 }
 
-.primary-button .text-wrapper3{
+.button .text-wrapper3{
     color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 12px;
@@ -103,7 +103,7 @@
     width: 102px;
 }
 
-.primary-button .vector{
+.button .vector{
     height: 22px;
     left: 55px;
     position: absolute;
@@ -111,7 +111,7 @@
     width: 21px;
 }
 
-.primary-button .rectangle3{
+.button .rectangle3{
     background-color: #000000;
     border-radius: 10px;
     height: 24px;
@@ -121,7 +121,7 @@
     width: 112px;
 }
 
-.primary-button .text-wrapper4{
+.button .text-wrapper4{
     color: #fafafa;
     font-family: "Inter", Helvetica;
     font-size: 12px;
@@ -136,7 +136,7 @@
     width: 112px;
 }
 
-.primary-button .overlap3{
+.button .overlap3{
     height: 27px;
     left: 245px;
     position: absolute;
@@ -144,7 +144,7 @@
     width: 102px;
 }
 
-.primary-button .vector2{
+.button .vector2{
     height: 18px;
     left: 214px;
     position: absolute;
@@ -152,7 +152,7 @@
     width: 21px;
 }
 
-.primary-button .overlap4{
+.button .overlap4{
     height: 26px;
     left: -78px;
     position: absolute;
@@ -160,7 +160,7 @@
     width: 95px;
 }
 
-.primary-button .rectangle4{
+.button .rectangle4{
     background-color: #000000;
     border-radius: 10px;
     height: 24px;
@@ -170,7 +170,7 @@
     width:  77px;
 }
 
-.primary-button .text-wrapper5{
+.button .text-wrapper5{
     color: #ffffff;
     font-family: "Inter", Helvetica;
     font-size: 12px;
@@ -185,7 +185,7 @@
     width: 95px;
 }
 
-.primary-button .vector3{
+.button .vector3{
     height: 17px;
     left: -119px;
     position: absolute;
