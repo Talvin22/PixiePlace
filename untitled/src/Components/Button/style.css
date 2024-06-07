@@ -1,0 +1,194 @@
+.button{
+    height: 25px;
+    position: relative;
+    width: 100px;
+}
+
+.button .overlap{
+    height: 25px;
+    left: -762px;
+    position: absolute;
+    top: -198px;
+    width: 102px;
+}
+
+.button .rectangle{
+    background-color: #0a0a0a;
+    border-radius: 10px;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 102px;
+}
+
+.button .text-wrapper{
+    color: #f7f7f7;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 102px;
+}
+
+.button .overlap-group{
+    height: 25px;
+    left: -648px;
+    position: absolute;
+    top: -198px;
+    width: 103px;
+}
+
+.button .div{
+    background-color: #000000;
+    border-radius: 10px;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 1px;
+    width: 103px;
+}
+
+.button .text-wrapper2{
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 103px;
+}
+
+.button .overlap-group2{
+    height: 27px;
+    left: 91px;
+    position: absolute;
+    top: -199px;
+    width: 102px;
+}
+
+.button .rectangle2{
+    background-color: #000000;
+    border-radius: 10px;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 3px;
+    width: 102px;
+}
+
+.button .text-wrapper3{
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 102px;
+}
+
+.button .vector{
+    height: 22px;
+    left: 55px;
+    position: absolute;
+    top: -195px;
+    width: 21px;
+}
+
+.button .rectangle3{
+    background-color: #000000;
+    border-radius: 10px;
+    height: 24px;
+    left: 0;
+    position: absolute;
+    top: 2px;
+    width: 112px;
+}
+
+.button .text-wrapper4{
+    color: #fafafa;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 112px;
+}
+
+.button .overlap3{
+    height: 27px;
+    left: 245px;
+    position: absolute;
+    top: -200px;
+    width: 102px;
+}
+
+.button .vector2{
+    height: 18px;
+    left: 214px;
+    position: absolute;
+    top: -193px;
+    width: 21px;
+}
+
+.button .overlap4{
+    height: 26px;
+    left: -78px;
+    position: absolute;
+    top: -198px;
+    width: 95px;
+}
+
+.button .rectangle4{
+    background-color: #000000;
+    border-radius: 10px;
+    height: 24px;
+    left: 8px;
+    position: absolute;
+    top: 2px;
+    width:  77px;
+}
+
+.button .text-wrapper5{
+    color: #ffffff;
+    font-family: "Inter", Helvetica;
+    font-size: 12px;
+    font-weight: 400;
+    height: 24px;
+    left: 0;
+    letter-spacing: 0;
+    line-height: normal;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 95px;
+}
+
+.button .vector3{
+    height: 17px;
+    left: -119px;
+    position: absolute;
+    top: -193px;
+    width: 18px;
+}
