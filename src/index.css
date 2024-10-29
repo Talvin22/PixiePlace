@@ -1,0 +1,233 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: white;
+    color: black;
+    overflow-x: hidden;
+}
+
+.wrapper{
+    width: 1280px;
+}
+
+header .logo{
+    font-weight: 600;
+    font-size: 20px;
+    margin-right: 15px;
+}
+
+header .presentation{
+    /* Зображення на головній сторінці*/
+    background-image: url('/src/img/cite.png');
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    width: 100vw; 
+    height: 100vh;
+}
+
+header .head{
+    display: flex;
+    align-items: center;
+}
+
+/*кнопки в header*/
+header .button-container {
+   display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Центрування кнопок */
+    gap: 10px; /* Проміжок між кнопками */
+    margin-top: 5px;
+}
+
+header .btn {
+    padding: 2px 15px ;
+    border-radius: 10px;
+    font-size: 12px;
+    background-color: #000000; 
+    color: white; 
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+header .btn:hover {
+    background-color: #23242392; 
+}
+
+/* Іконки в Header */
+header #icon{
+  width: 15px;
+  height: 15px;
+}
+
+header #icon:hover{
+    color: #23242392;
+}
+
+header .shop-cart{
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 30%;
+    left: 30%;
+    padding: 100px 0 0 0 ;
+    border-radius: 10px;
+    width: 90%;  
+    max-width: 600px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+header .liked{
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 30%;
+    left: 30%;
+    padding: 100px 0 0 0 ;
+    border-radius: 10px;
+    width: 90%;  
+    max-width: 600px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+header .login{
+    position: absolute;
+    background-color: #f0f0f0;
+    top: 30%;
+    left: 30%;
+    padding: 200px 0 0 0 ;
+    border-radius: 10px;
+    width: 90%;  
+    max-width: 600px;  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  
+}
+
+/* пошуковий рядок в header */
+header .search{
+    border: 2px solid #000000;
+    width: 400px;
+    border-radius: 10px;
+    padding-left: 6px;
+}
+
+/* вспливаючі вікна */
+        /*Кошик*/
+header .Basket{
+    position: absolute;
+    top: 0;
+    left: 45%;
+    font-size: 22px;
+}
+
+header .close{
+    position: absolute;
+    top: 3px;
+    right: 5px;   
+}
+
+header .Sum, .Sum1, .Sum2, .Buy{
+    display: flex;
+    margin-left: 65%;
+}
+
+header .Buy{
+    border: 2px solid #000000;
+    border-radius: 15px;
+    width: 70px;
+    margin-bottom: 10px;
+    padding-left: 11px;
+    color: white;
+    background-color: #000000;
+}
+
+header .Buy:hover{
+    background-color: #23242392;
+}
+
+header .buy-commodity{
+    position: absolute;
+    border:2px solid #000000;
+    top: 30px;
+    left: 1px;
+    width: 380px;
+    height: 150px;
+}
+        /* Список бажаного*/
+header .list-liked{
+    position: absolute;
+    top: 2px;
+    left: 40%;
+}
+
+
+
+
+        /*вхід*/
+header .login{
+    height: 50px;
+    width: 300px;
+}
+header .entrance{
+   position: absolute;
+   top: 0;
+   left: 50%;
+}
+
+header .email-label{
+    position: absolute;
+    top: 20px;
+    left: 10px;
+}
+header .email-input{
+    position: absolute;
+    top: 45px;
+    left: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding-left: 5px;
+}
+
+header .password-label{
+    position: absolute;
+    top: 70px;
+    left: 10px;
+}
+
+header .password-input{
+    position: absolute;
+    top: 95px;
+    left: 10px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+    padding-left: 5px;
+    background-color: none;
+}
+
+header .forgot-password{
+    position: absolute;
+    top: 115px;
+    left: 20px;
+    border: none;
+    font-size: 12px;
+    background-color: none;
+}
+
+header .enter{
+    position: absolute;
+    top: 135px;
+    left: 40%;
+    width: 70px;
+    border: 2px solid #000000;
+    border-radius: 10px;
+}
+
+header .register{
+   position: absolute;
+   top: 160px;
+   left: 35%;
+   border: none;
+    
+}
